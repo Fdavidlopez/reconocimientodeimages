@@ -1,9 +1,13 @@
 <?php
+ini_set('display_errors',1);
+ini_set('display_status_errors',1);
+error_reporting(E_ALL);
+
 if (isset($_GET['file']) && isset($_GET['name'])){
     $file = $_GET {'file'};
     $name = $_GET {'name'};
 }else {
-  header('Location: https://informatica.ieszaidinvergeles.org:10054/PIA/env');
+  header('Location: https://informatica.ieszaidinvergeles.org:10054/PIA/env/reconocimientodeimages');
   exit;
 }
 ?>

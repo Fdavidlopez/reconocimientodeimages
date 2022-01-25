@@ -20,7 +20,7 @@ $file = 'familia.jpg';
 $name = 'familia.jpg';
 uploadFileToBucket($file,$name);   
 
-header('Location: https://informatica.ieszaidinvergeles.org:10054/PIA/env/ejemplo2.php?file=' . $file . '&name=' . $name);
+header('Location: https://informatica.ieszaidinvergeles.org:10054/PIA/env/reconocimientodeimages/ejemplo2.php?file=' . $file . '&name=' . $name);
 exit;
 
 function uploadFileToBucket($file, $key) {

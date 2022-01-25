@@ -24,7 +24,7 @@ foreach($_POST['x'] as $index => $x) {
 imagejpeg($image2, 'blur_' . $_POST['file']); 
 imagedestroy($image1);
 imagedestroy($image2);
-//header('Location: blur_' . $_POST['file']);
+header('Location: blur_' . $_POST['file']);
 
 ?>
 

@@ -1,12 +1,14 @@
 const urlParams = new URLSearchParams(window.location.search);
 const name = urlParams.get('name');
 
-let url = 'https://informatica.ieszaidinvergeles.org:10054/PIA/env/service.php?name=' + name;
+let url = 'https://informatica.ieszaidinvergeles.org:10054/PIA/env/reconocimientodeimages/service.php?name=' + name;
+console.log(url);
 fetch(url)
     .then(function(response) {
             return response.json();
     })
     //respuesta
+    
     .then(function (data) {
             console.log('Request succeeded with JSON response', data);
             processResponse(data);//poner en marcha el jcrop
@@ -53,6 +55,5 @@ fblur.addEventListener("submit", function(){
         addInput('h', crop.pos.h, fblur);
     }
 });
-    
 
 //let rectangulos = document.querySelector('.')
