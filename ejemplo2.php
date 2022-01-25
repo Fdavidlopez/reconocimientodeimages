@@ -24,7 +24,7 @@ if (isset($_GET['file']) && isset($_GET['name'])){
     <form action="ejemplo3.php" method="post" id="fblur">
         <input type="hidden" name="file" value="<?= $file ?>"/>
         <input type="hidden" name="name" value="<?= $name ?>"/>
-        <input type="submit" value="procesa blur !!"/>
+        <input type="submit" value="Procesar filtrado de edad !!"/>
     </form>
     <script src= "service.js"></script>
 </body>
