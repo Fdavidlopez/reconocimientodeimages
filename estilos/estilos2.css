@@ -1,0 +1,11 @@
+body{
+    background-image: url("fondo.jpg");
+}
+.boton{
+    border-radius: 15%;
+    color:blue;
+    width:200px;
+    margin-left:80%;
+    height:30px;
+    
+}
